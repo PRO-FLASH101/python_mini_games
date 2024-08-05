@@ -20,19 +20,19 @@ for time in number:
     dob = input("Enter employee dob(dd/mm/yyyy): ")
     
     # Extract year from dob
-    dob_date = datetime.strptime(dob, "%d/%m/%Y")
-    year = dob_date.year
-    years.append(year)
+    dob_date = datetime.strptime(dob, "%d/%m/%Y") #converts string to int
+    year = dob_date.year # extract year 
+    years.append(year) # add year 
     
     # Calc the Age
-    current_year = datetime.now().year
-    employee_age = current_year - year
-    age.append(employee_age)
+    current_year = datetime.now().year #get year from current day
+    employee_age = current_year - year #gets the current age
+    age.append(employee_age) #adds current age 
     
     # Adds the data to a list so it can do to the dict
-    name1.append(name)
-    id1.append(emp_id)
-    dob1.append(dob)
+    name1.append(name) #adds name
+    id1.append(emp_id) #adds id
+    dob1.append(dob) #adds dob 
 
 # Creating the DataFrame
 data = {
@@ -43,6 +43,6 @@ data = {
     'Age': age
 }
 
-df = pd.DataFrame(data)
+df = pd.DataFrame(data) #makes the table from the data 
 print(df)
 
