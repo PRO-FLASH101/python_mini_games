@@ -53,6 +53,6 @@ Example1 = f'''Once upon a time, There lived a young {x}. He walked down the str
             \n {x} replied "Okay thats not enough to stop me I will be the greatest, I will prove to everyone I am the best, I will be the WIZARD KING!"
             '''
 #find a way to change "a" to "an" if a,i,o,u,e
-
+# add a print to actually print out the example!!!
 
 
