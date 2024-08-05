@@ -14,6 +14,8 @@ solution = 27 #parttwo
 numberoftries = 3
 guesscount = 0
 # this is the game
+print("")
+print("Hint: the answer is under a 100 but is greater than 10")
 while guesscount < numberoftries:
     guess = int(input("Guess the number: "))
     guesscount += 1
