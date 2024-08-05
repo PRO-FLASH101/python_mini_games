@@ -23,6 +23,8 @@ data = {
     'Dob': dob1,
     # 'Age': 
 }
+df = pd.DataFrame(data)
+print(df)
 
 #loop
 while time <= amount:
