@@ -9,9 +9,9 @@ What do I need
 #The inputs for the words
 
 # this will be the adjectives
-a = input("") # lacks paprathese update later...
-b = input("")
-c = input("")
+# a = input("") # lacks paprathese update later...
+# b = input("")
+# c = input("")
 
 # this will be the characters/tools 
 x = input("Enter a character: ") # lacks paprathese update later...
@@ -26,12 +26,10 @@ f = input("Enter a word for difficulty: ")
 #time
 g = input("Enter an amount of time and include units of time: ")
 h = input("Enter an amount of time and include units of time: ")
-i = input("")
 
 # this will be the colors
 j = input("Enter a color: ")
 f = input("Enter a color: ")
-k = input("")
 
 #The examples
 Example1 = f'''Once upon a time, There lived a young {x}. He walked down the street and saw a magical {y}. 
@@ -52,7 +50,8 @@ Example1 = f'''Once upon a time, There lived a young {x}. He walked down the str
             \n you said I could be great but I didn't realise it so thats why I fail low-level tasks because I lack control of my large power". {z} chuckled
             \n "hey at least you have a good head on your shoulders, so what is your wish?" {x} suprised said "I was right, letsssss gooooo! My wish is for you to be 
             \n my teacher and teach me all the things you know". {z} took {h} to respond and said in a deep voice "YOUR WISH IS MY COMMAND. But I will be a tough teacher"
-            \n {x} replied "Okay thats not enough to stop me I will be the greatest, I will prove to everyone I am the best, I will be the WIZARD KING!"'''
+            \n {x} replied "Okay thats not enough to stop me I will be the greatest, I will prove to everyone I am the best, I will be the WIZARD KING!"
+            '''
 #find a way to change "a" to "an" if a,i,o,u,e
 
 
