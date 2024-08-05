@@ -1,3 +1,5 @@
+#bug it says err try again after last try fix that
+
 import random
 
 #FOR STAGE 1
