@@ -2,7 +2,13 @@ import pandas as pd
 from datetime import datetime
 
 # Number of employees
-amount = int(input("How many employees do you want to add?\nEnter here: "))
+try:
+    amount = int(input("How many employees do you want to add?\nEnter here: "))
+except:
+    print("Enter a integar no letters or special characters")
+    amount = int(input("How many employees do you want to add?\nEnter here: "))
+else:
+    print(f'Okay there are {amount} employees') 
 number = list(range(1, amount + 1))
 
 # Data lists
@@ -15,9 +21,26 @@ age = []
 # Loop to collect employee data
 for time in number:
     print(f'Employee {time}')
-    name = input("Enter employee name: ")
-    emp_id = input("Enter employee id: ")
-    dob = input("Enter employee dob(dd/mm/yyyy): ")
+    try:
+        name = input("Enter employee name: ")
+    except: 
+        print("Use a name no numbers or special character!")
+        name = input("Enter employee name: ")
+    else: 
+        continue 
+    try:
+        emp_id = input("Enter employee id: ")
+    except:
+        print("use only numbers no letters or strings")
+    else:
+        continue 
+    try:
+        dob = input("Enter employee dob(dd/mm/yyyy): ")
+    except:
+        print("Enter in the proper values in the right order")
+        dob = input("Enter employee dob(dd/mm/yyyy): ")
+    else:
+        continue
     
     # Extract year from dob
     dob_date = datetime.strptime(dob, "%d/%m/%Y") #converts string to int
