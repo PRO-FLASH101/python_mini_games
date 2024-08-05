@@ -11,9 +11,6 @@ id1 = []
 dob1 = []
 years = []
 age = []
-for year in years:
-    x = 2024 - year
-    age.append(x)
 
 # Loop to collect employee data
 for time in number:
@@ -27,6 +24,12 @@ for time in number:
     year = dob_date.year
     years.append(year)
     
+    # Calc the Age
+    current_year = datetime.now().year
+    employee_age = current_year - year
+    age.append(employee_age)
+    
+    # Adds the data to a list so it can do to the dict
     name1.append(name)
     id1.append(emp_id)
     dob1.append(dob)
