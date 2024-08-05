@@ -17,7 +17,7 @@ while guesscount < numberoftries:
         print("YOU GUESSED THE NUMBER!!!!")
         print("You passed stage 1 welcome to stage 2")
         print('')
-        print("STAGE 2: the harder guessing round same hints don't apply")
+        print("STAGE 2: the harder guessing round same hints from stage 1 don't apply")
         print("")
         # this is how the solution is made
         partone = random.randrange(1,50)
