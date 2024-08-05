@@ -23,11 +23,12 @@ while guesscount < numberoftries:
         partone = random.randrange(1,50)
         numberguess = int(input("Enter a random number: "))
         print("Your hint is the number you entered will be multiplied by a random number, so guess the number!!")
+        print("Also you get 2 extra tries because it is harder!!!")
         # this is the solution
         parttwo = partone * numberguess
         solution = parttwo
         # this is the parameter 
-        numberoftries = 3
+        numberoftries = 5
         guesscount = 0
         # this is the game
         while guesscount < numberoftries:
@@ -42,6 +43,10 @@ while guesscount < numberoftries:
             print("Better luck next time!")
         # this way the person doesn't get angry at an impossible game 
         break
+    elif guess != answer_for_easy:
+        print("")
+        print("Errr try again.... ")
+        print('')
 else:
     print("")
     print("The solution was", answer_for_easy)
