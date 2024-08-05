@@ -31,7 +31,7 @@ for time in number:
             break
         else:
             print("Use a name with no numbers or special characters!")
-
+    
     # Collecting and validating employee ID
     while True:
         emp_id = input("Enter employee id: ")
@@ -60,11 +60,6 @@ for time in number:
     current_year = datetime.now().year #get year from current day
     employee_age = current_year - year #gets the current age
     age.append(employee_age) #adds current age 
-    
-    # Adds the data to a list so it can do to the dict
-    name1.append(name) #adds name
-    id1.append(emp_id) #adds id
-    dob1.append(dob) #adds dob 
 
 # Creating the DataFrame
 data = {
