@@ -8,9 +8,9 @@ What do I need
 '''
 #The inputs for the words
 
-# this will be the adjectives
+# this will be the adjectives/places
 a = input("Enter a magical activity: ") 
-# b = input("")
+b = input("Enter a building: ")
 # c = input("")
 
 # this will be the characters/tools 
@@ -30,6 +30,11 @@ h = input("Enter an amount of time and include units of time: ")
 # this will be the colors
 j = input("Enter a color: ")
 f = input("Enter a color: ")
+
+#numbers
+l = input("Enter a number: ")
+m = input("")
+n = input("")
 
 #The examples
 Example1 = f'''Once upon a time, There lived a young {x}. He walked down the street and saw a magical {y}. 
@@ -53,7 +58,7 @@ Example1 = f'''Once upon a time, There lived a young {x}. He walked down the str
             \n {x} replied "Okay thats not enough to stop me I will be the greatest, I will prove to everyone I am the best, I will be the WIZARD KING!"
             '''
 
-Example2: f'''
+Example2: f'''{x} was walking down the hallway in his {b}, when he passed his bedroom he stopped and saw {l} {y}'s. He wondered how it got in his room, and saw a  
 '''
 
 print(Example1) #delete later..
