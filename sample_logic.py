@@ -14,11 +14,11 @@ number = list(range(1, employee_amount + 1))
 
 # Data lists
 employee_list = [
-    [], #name
-    [], #id1
-    [], #dob1
-    [], #years
-    []  #age 
+    [], # name
+    [], # id1
+    [], # dob1
+    [], # years
+    []  # age 
 ]
 
 # Loop to collect employee data
@@ -47,31 +47,32 @@ for time in number:
     while True:
         dob = input("Enter employee dob (dd/mm/yyyy): ")
         try:
-            dob_date = datetime.strptime(dob, "%d/%m/%Y")
-            employee_list[2].append(dob)
-            break
+            dob_date = datetime.strptime(dob, "%d/%m/%Y") # change str to int
+            
+            if dob_date > datetime.now():
+                print("Enter a valid year that is not in the future!")
+            else:
+                employee_list[2].append(dob)
+                year = dob_date.year
+                employee_list[3].append(year)
+                break
         except ValueError:
             print("Enter in the proper format (dd/mm/yyyy)")
     
-    # Extract year from dob
-    dob_date = datetime.strptime(dob, "%d/%m/%Y") #converts string to int
-    year = dob_date.year # extract year 
-    employee_list[3].append(year) # add year 
-    
-    # Calc the Age
-    current_year = datetime.now().year #get year from current day
-    employee_age = current_year - year #gets the current age
-    employee_list[4].append(employee_age) #adds current age 
+    # Calculate the age
+    current_year = datetime.now().year
+    employee_age = current_year - year
+    employee_list[4].append(employee_age)
 
 # Creating the DataFrame
 data = {
     'S no': number, 
     'Name': employee_list[0],
     'Emp Id': employee_list[1],
-    'Dob': employee_list[3],
+    'Dob': employee_list[2],  # Use dob (day/month/year)
+    'Year': employee_list[3],  # Add year as separate column if needed
     'Age': employee_list[4]
 }
 
-df = pd.DataFrame(data) #makes the table from the data 
+df = pd.DataFrame(data)
 print(df)
-
