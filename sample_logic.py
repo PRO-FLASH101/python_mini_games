@@ -62,7 +62,10 @@ for time in number:
     # Calculate the age
     current_year = datetime.now().year
     employee_age = current_year - year
-    employee_list[4].append(employee_age)
+    if employee_age == 0:
+        employee_list[4].append(0)
+    else:
+        employee_list[4].append(employee_age)
 
 # Creating the DataFrame
 data = {
