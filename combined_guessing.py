@@ -43,7 +43,46 @@ while guesscount < numberoftries:
             if guess == solution:
                 print("YOU GUESSED THE NUMBER!!!!")
                 print("If you entered 0 in for the random number than you are either lucky, or super intutive!")
-                break
+                print("")
+                print("--------------------------------------------------------------------------------------------------------------")
+                print("BONUS ROUND UNLOCKED!!!!")
+                print("In this bonus round both solutions will be added and multiplied by a number under 5!")
+                print("You will only have 2 guesses in total this round...")
+                print("If you make it past this round you are a true winner")
+                print("")
+                
+                #solution for bonus round
+                part = random.randrange(1,5)
+                part1 = solution + answer_for_easy
+                solution_for_bonus = part1 * part
+                
+                #parameters for bonus round 
+                guesscount = 0
+                numberoftries = 2
+                
+                #the game for bonus round
+                while guesscount < numberoftries:
+                    bonus_round_guess = int(input("Enter your guess for the bonus round: "))
+                    if bonus_round_guess == solution_for_bonus:
+                        print("Congratulations on completing both stages and the bonus round 🤯🥳🥵!!!")
+                        print("And if this was on your first try your really good at guessing games 🐱‍👤🥱🤨🤔!!")
+                        print("")
+                        print("THE END")
+                        print("--------------------------------------------------------------------------------------------------------------")
+                        break              
+                    # so they know they were wrong      
+                    elif bonus_round_guess != solution_for_bonus and guesscount < numberoftries:
+                        print("")
+                        print("Errr try again.... ")
+                        print('')
+                # so they feel somewhat good
+                else:
+                    print("")
+                    print("Sorry you didn't clear the bonus round 😭!!")
+                    print("But at least you made it past the first to 2 levels 😅!!")
+                    print("")
+                    print("THE END")
+                    print("--------------------------------------------------------------------------------------------------------------")
             # so they know they guessed wrong 
             elif guesscount < numberoftries and guess != solution:
                 print("")
