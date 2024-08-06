@@ -21,34 +21,46 @@ while guesscount < numberoftries:
         print('')
         print("STAGE 2: the harder guessing round same hints from stage 1 don't apply")
         print("")
-        # this is how the solution is made
+       
+        # this is how the solution is made for stage 2 
         partone = random.randrange(1,50)
         numberguess = int(input("Enter a random number: "))
         print("Your hint is the number you entered will be multiplied by a random number, so guess the number!!")
         print("Also you get 2 extra tries because it is harder!!!")
-        # this is the solution
+       
+        # this is the solution for stage 2
         parttwo = partone * numberguess
         solution = parttwo
-        # this is the parameter 
+       
+        # this is the parameter for stage 2
         numberoftries = 5
         guesscount = 0
-        # this is the game
+       
+        # this is the game for stage 2
         while guesscount < numberoftries:
             guess = int(input("Guess the number: "))
             guesscount += 1
             if guess == solution:
                 print("YOU GUESSED THE NUMBER!!!!")
+                print("If you entered 0 in for the random number than you are either lucky, or super intutive!")
                 break
+            # so they know they guessed wrong 
+            elif guesscount < numberoftries and guess != solution:
+                print("")
+                print("Errr try again.... ")
+                print('')
+        # this way the person doesn't get angry at an impossible game 
         else:
             print("")
             print("The solution was", solution)
             print("Better luck next time!")
-        # this way the person doesn't get angry at an impossible game 
         break
+    # so they know its wrong number 
     elif guesscount < numberoftries and guess != answer_for_easy:
         print("")
         print("Errr try again.... ")
         print('')
+# so no one gets angry in stage 1 
 else:
     print("")
     print("The solution was", answer_for_easy)
