@@ -3,7 +3,7 @@
 import random
 
 #FOR STAGE 1
-answer_for_easy = 27
+answer_for_easy = random.randrange(1,10)
 
 # this is the parameter 
 numberoftries = 3
@@ -11,7 +11,7 @@ guesscount = 0
 
 # this is stage 1
 print("")
-print("Hint: the answer is under a 100 but is greater than 10")
+print("Hint: The answer is under 15!")
 while guesscount < numberoftries:
     guess = int(input("Guess the number: "))
     guesscount += 1
@@ -45,7 +45,7 @@ while guesscount < numberoftries:
             print("Better luck next time!")
         # this way the person doesn't get angry at an impossible game 
         break
-    elif guess != answer_for_easy:
+    elif guesscount < numberoftries and guess != answer_for_easy:
         print("")
         print("Errr try again.... ")
         print('')
