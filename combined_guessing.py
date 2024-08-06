@@ -65,7 +65,6 @@ def Guessing_game():
                         bonus_round_guess = int(input("Enter your guess for the bonus round: "))
                         guesscount += 1  # Increment guesscount here
                         if bonus_round_guess == solution_for_bonus:
-                            print(solution_for_bonus) #for debugging 
                             print("")
                             print("YOU WON THE ENTIRE GAME 😮😲🤯!!!")
                             print("Congratulations on completing both stages and the bonus round 🤯🥳🥵!!!")
