@@ -18,7 +18,7 @@ employee_list = [
     [], #id1
     [], #dob1
     [], #years
-    [] #age 
+    []  #age 
 ]
 
 # Loop to collect employee data
@@ -65,9 +65,9 @@ for time in number:
 
 # Creating the DataFrame
 data = {
-    'S no': employee_list[0], 
-    'Name': employee_list[1],
-    'Emp Id': employee_list[2],
+    'S no': number, 
+    'Name': employee_list[0],
+    'Emp Id': employee_list[1],
     'Dob': employee_list[3],
     'Age': employee_list[4]
 }
