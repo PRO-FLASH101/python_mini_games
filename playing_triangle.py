@@ -1,4 +1,5 @@
 # The info for the triangle
+# To make sure they don't enter in the wrong stuff 
 while True:
     try: 
         which_type = int(input("Which type of triangle do you want? (1-6)\n1. Half Pyramid\n2. Inverted Half Pyramid\n3. Hollow Inverted Half Pyramid\n4. Full Pyramid\n5. Inverted Full Pyramid\n6. Hollow Full Pyramid\nEnter Here: "))
@@ -14,7 +15,7 @@ while True:
         print("Enter in only numbers, no special characters, or letters!!!")
         print('')
 
-# List for iterating
+# List for iterating for the first 3 
 the_height = list(range(1, height + 1))
 inverted_height = list(reversed(the_height))
 
@@ -83,7 +84,6 @@ elif which_type == 5:
 elif which_type == 6:
     choice6()
         
-else: 
-    print("INVALID CHOICE: Please chose between 1 to 6!")
+
         
 
