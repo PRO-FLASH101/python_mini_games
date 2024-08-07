@@ -39,13 +39,13 @@ while True:
     # The options
     def choice1():
         for num in the_height:
-            for x in range(num):
+            for _ in range(num):
                 print("* ", end="")  # the end="" is to make sure it is joined
             print("")  # move to next line after printing stars for the current row 
             
     def choice2():
         for num in inverted_height:
-            for x in range(num):
+            for _ in range(num):
                 print("* ", end="")
             print("")
 
