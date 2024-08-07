@@ -4,7 +4,7 @@
 3. no built in 
 '''
 # The info for the triangle
-which_type = int(input("Which type of triangle do you want?\nEnter Here: "))
+which_type = int(input("Which type of triangle do you want? (1-6)\n1. Half Pyramid\n2. Inverted Half Pyramid\n3. Hollow Inverted Half Pyramid\n4. Full Pyramid\n5. Inverted Full Pyramid\n6. Hollow Full Pyramid\nEnter Here: "))
 print("")
 height = int(input("How long do you want the triangle to be? \nEnter Here: "))
 print("")
@@ -74,5 +74,6 @@ elif which_type == 5:
 
 elif which_type == 6:
     choice6()
-
+else: 
+    print("INVALID CHOICE: Please chose between 1 to 6!")
 
