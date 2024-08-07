@@ -46,7 +46,7 @@ def choice4():
         # Leading spaces
         spaces = '  ' * i
         # Stars
-        stars = '* ' * (2 * (height - i) - 1)
+        stars = '* ' * (2 * ((height + 1) - i) - 1)
         print(spaces + stars)
     
 
