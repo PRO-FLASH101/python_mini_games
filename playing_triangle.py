@@ -1,3 +1,4 @@
+# To make the program go on forever
 while True:
     # The info for the triangle
     # To make sure they don't enter in the wrong stuff 
