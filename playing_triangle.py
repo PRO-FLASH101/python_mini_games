@@ -22,7 +22,7 @@ while True:
         try:
             height = int(input("How long do you want the triangle to be? \nEnter Here: "))
             print("")
-            if height.isdigit() == True and height > 0:
+            if height.isnumeric() == True and height > 0:
                 break
             else:
                 print("Height must be a postive number and a number no letters or special characters!")
