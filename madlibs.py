@@ -9,19 +9,19 @@ What do I need
 #The inputs for the words
 
 # this will be the adjectives/places
-a = input("Enter a magical activity: ") 
+a = input("Enter a activity: ") 
 b = input("Enter a building: ")
-# c = input("")
+c = input("Enter a adjective:")
 
 # this will be the characters/tools 
-x = input("Enter a character: ") 
+x = input("Enter a name: ") 
 y = input("Enter a item: ")
 z = input("Enter a thing: ")
 
 #words
-d = input("Enter something unintelligible: ")
-e = input("Enter an angry rebuttal: ")
-f = input("Enter a word for difficulty: ")
+d = input("Enter something a baby would say: ")
+e = input("Enter an angry word: ")
+f = input("Enter a nouny: ")
 
 #time
 g = input("Enter an amount of time and include units of time: ")
@@ -39,7 +39,7 @@ n = input("")
 #The examples
 Example1 = f'''Once upon a time, There lived a young {x}. He walked down the street and saw a magical {y}. 
             \n He wondered what the magical {y} is, and debated wheter or not to pick it up. Finally, he decided to pick it up.
-            \n Then he decided to use the {y}. When he used this {y}, a giant explosion came out of it. From the explosion came out a {j} {z}.
+            \n Then he decided to use the {y}. When he used this {y}, a giant explosion came out of it. From the {c} came out a {j} {z}.
             \n The {z} shouted "ARE YOU THE ONE WHO SUMMONED ME!!! YOU DARE AWAKEN ME FROM MY DEEP SLUMBER!" And {x} to frightened to speak stuttered and said "{d}"
             \n The {z} responded with "What atrocious language are you speaking?" This took {x} about {g} to register, then he screamed "{e}".
             \n {z} flabbergasted said ""Let's start again. I am {z} the magnificient, and I will grant you one wish if you answer my riddle."
