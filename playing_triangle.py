@@ -4,6 +4,7 @@ while True:
     # To make sure they don't enter in the wrong stuff 
     while True:
         try: 
+            print("")
             which_type = int(input("Which type of triangle do you want? (1-6)\n1. Half Pyramid\n2. Inverted Half Pyramid\n3. Hollow Inverted Half Pyramid\n4. Full Pyramid\n5. Inverted Full Pyramid\n6. Hollow Full Pyramid\n7. Exit the program\nEnter Here: "))
             print("")
             if which_type > 7 or which_type < 1:
@@ -22,10 +23,11 @@ while True:
         try:
             height = int(input("How long do you want the triangle to be? \nEnter Here: "))
             print("")
-            if height.isnumeric() == True and height > 0:
+            if height > 0:
                 break
             else:
                 print("Height must be a postive number and a number no letters or special characters!")
+                print("")
         except ValueError:
             print("Only use numbers!!")
         
