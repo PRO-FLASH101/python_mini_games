@@ -1,5 +1,10 @@
 import random
 
+def when_wrong():
+    print("")
+    print("Errr try again.... ")
+    print('')
+
 def Guessing_game():
     # FOR STAGE 1
     answer_for_easy = random.randrange(1, 10)
@@ -75,9 +80,7 @@ def Guessing_game():
                             break
                         # to let user know they were wrong 
                         elif bonus_round_guess != solution_for_bonus:
-                            print("")
-                            print("Errr try again.... ")
-                            print('')
+                            when_wrong()
                     # so user feel somewhat good
                     else:
                         print("")
@@ -90,9 +93,7 @@ def Guessing_game():
                     break
                 # so user know they were wrong
                 elif guesscount < numberoftries and guess != solution:
-                    print("")
-                    print("Errr try again.... ")
-                    print('')
+                    when_wrong()
             else:
                 print("")
                 print("The solution was", solution)
@@ -100,9 +101,7 @@ def Guessing_game():
             break
         # so user know they were wrong 
         elif guesscount < numberoftries and guess != answer_for_easy:
-            print("")
-            print("Errr try again.... ")
-            print('')
+            when_wrong()
     else:
         print("")
         print("The solution was", answer_for_easy)
