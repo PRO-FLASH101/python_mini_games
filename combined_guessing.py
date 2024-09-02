@@ -14,8 +14,9 @@ def Guessing_game():
     guesscount = 0
 
     # this is stage 1
+    name = input("What's your name?n\Enter Name: ")
     print("")
-    print("Hint: The answer is under 15!")
+    print(f"Hello there {name} welcome to the guessing game I hve a hint for you the answer is under 15!")
     # stage 1 game and total 
     while guesscount < numberoftries:
         guess = int(input("Guess the number: "))
