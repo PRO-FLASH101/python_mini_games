@@ -14,9 +14,13 @@ def Guessing_game():
     guesscount = 0
 
     # this is stage 1
-    name = input("What's your name?n\Enter Name: ")
+    name = input("What's your name?\nEnter Name: ")
     print("")
     print(f"Hello there {name} welcome to the guessing game I hve a hint for you the answer is under 15!")
+    print("OH by the way here are the rules!")
+    print("1. You will have 3 tries to guess the number \n2. There are hidden rules and levels \n3. If you make it to any hiddne levels no rules apply there\n4. You will not be told if your guess is too high or too low")
+    print("")
+    print("Bon Chance, Mon Ami!")
     # stage 1 game and total 
     while guesscount < numberoftries:
         guess = int(input("Guess the number: "))
